@@ -4,7 +4,10 @@
 }
 
 body{
-    background: #E9ECF4;
+    background-image: url("");
+    background-repeat: no-repeat;
+    height: 1080px;
+    width: 2144px;
     color: black;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -35,7 +38,7 @@ body{
 
 
 #logo{
-    padding-right: 100px;
+    padding-right: 200px;
     padding-left: 0px;
     height: 100px;
     width: 00px;
@@ -64,7 +67,6 @@ body{
     gap: 20px;
 }
 
-
 .contenedor .footer{
     background: transparent;
     color: white;
@@ -78,7 +80,7 @@ body{
     .contenedor{
         grid-template-areas:"header header header"
                             "contenido contenido contenido"
-                            "contenido contenido contenido"
+                            "sidebar sidebar sidebar"
                             "footer footer footer";
     }
     body{

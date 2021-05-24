@@ -1,0 +1,70 @@
+{
+    "nameCollection":"Marvel Movie Figurines 2021",
+    "year":"2021",
+    "figures":[
+        {
+            "id":1,
+            "name":"Dementor",
+            "description":"information of hero",
+            "price":19.95,
+            "type":"bad",
+            "img":"figure-1-dementor.png"
+        },
+        {
+            "id":2,
+            "name":"Flash",
+            "description":"information of hero",
+            "price":75,
+            "type":"good",
+            "img":"figure-2-flash.png"
+        },
+        {
+            "id":3,
+            "name":"Harry Potter",
+            "description":"information of hero",
+            "price":20,
+            "type":"good",
+            "img":"figure-3-harry_potter.png"
+        },
+        {
+            "id":4,
+            "name":"Iron Spider",
+            "description":"information of hero",
+            "price":124.95,
+            "type":"good",
+            "img":"figure-4-iron_spider_man.png"
+        },
+        {
+            "id":5,
+            "name":"Power Girl",
+            "description":"information of hero",
+            "price":41,
+            "type":"bad",
+            "img":"figure-5-power_girl.png"
+        },
+        {
+            "id":6,
+            "name":"Robin",
+            "description":"information of hero",
+            "price":12.5,
+            "type":"good",
+            "img":"figure-6-robin.png"
+        },
+        {
+            "id":7,
+            "name":"Sonic Pixel",
+            "description":"information of hero",
+            "price":21,
+            "type":"bad",
+            "img":"figure-7-sonic_pixel.png"
+        },
+        {
+            "id":8,
+            "name":"Base Star Trek",
+            "description":"information of hero",
+            "price":80.20,
+            "type":"good",
+            "img":"figure-8-star_trek.png"
+        }
+    ]
+}

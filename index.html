@@ -28,7 +28,7 @@
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="collapse navbar-collapse" id="navbarNav"> <!-- Poner cuatro cosas significantes aquí arriba -->
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -48,15 +48,17 @@
                 </div>
             </nav>
         </header>
-        <main class="contenido">
-            <div class="input-group rounded" style="margin-bottom: 30px;">
-                <input type="search" class="form-control rounded" placeholder="Busca un evento" aria-label="Search"
+        <main class="contenido"><!-- FILTRO BÚSQUEDA
+            Hacer filtro de búsqueda con JS -->
+            <div class="input-group rounded" style="margin-bottom: 30px;"> 
+                <input type="search" id="input-seach" class="form-control rounded" placeholder="Busca un evento" aria-label="Search"
                     aria-describedby="search-addon" />
                 <span class="input-group-text border-0" id="search-addon">
                     <input type="button" value="Buscar" style="background-color: transparent; border: none;">
                 </span>
             </div>
-            <div>
+            <div><!-- FILTRO
+                Hacer el filtro del estilo con JS -->
                 <p>
                     <label>Filtra por estilo:</label>
                     <select name="stars" id="filtrar-estrellas">
@@ -69,83 +71,18 @@
                     </select>
                 </p>
             </div>
-        <div id="cards">
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
+            <div id="list-events" class="container"></div> <!-- MAIN -->
+            <div class="social">
+                <a href="https://es-es.facebook.com/"><img src="./img/ofertas.jpeg" alt="oferta" style="height: 80px; width: 80px;"></a>
+                <!-- Poner ofertas aquí dentro con la foto del evento -->
+                <a href="https://es-es.facebook.com/"><img src="./img/logo/seven-network-tv.svg" alt="Facebook" style="height: 80px; width: 80px;"></a>
+                <a href="https://www.instagram.com/?hl=es"><img src="./img/logo/seven-network-tv.svg" alt="Instragram" style="height: 80px; width: 80px;"></a>
+                <a href="https://twitter.com/"><img src="./img/logo/seven-network-tv.svg" alt="Twitter" style="height: 80px; width: 80px;"></a>
+                <a href="https://www.reddit.com/"><img src="./img/logo/seven-network-tv.svg" alt="Reddit" style="height: 80px; width: 80px;"></a>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-            <br><br>
         </main>
-        <footer class="footer">
+        <footer class="footer"><!-- FOOTER
+            Hacerlo dinámico -->
             <div class="container py-4">
               <div class="row py-4">
                 <div class="col-lg-2 col-md-6 mb-4 mb-lg-0"><img src="img/logo.png" alt="" width="180" class="mb-3">
@@ -209,6 +146,8 @@
             </div>
           </footer>
     </div>
+
+    <script src="./js/app.js"></script>
 </body>
 
 </html>

@@ -7,9 +7,17 @@ body{
     background-image: url("");
     background-repeat: no-repeat;
     height: 1080px;
-    width: 2144px;
+    width: 1900px;
     color: black;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.social{
+	/*las imágenes usadas tienen width de 48px*/
+	width:70px;
+	position:fixed;
+	top:150px;
+    right:30px;
 }
 
 .contenedor{
@@ -57,7 +65,7 @@ body{
     grid-area: contenido;
 }
 
-.contenedor .contenido #cards {
+.contenedor .contenido #list-events {
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-area: auto;

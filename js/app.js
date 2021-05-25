@@ -1,38 +1,82 @@
+const containerDiv = document.querySelector('#list-events');
+let eventSelect = document.querySelector("#filtrar-estrellas");
+const buscarBtn = document.querySelector("#search-btn");
+let eventXML = "";
 
-let booksJSON = [];
+window.onload = function () {
+    cargarXMLEvent();
+    buscarBtn.addEventListener("click", (event) => {
+        filtrarEvents();
+    });
+};
 
-function init(){
-    getEvents();
+const cargarXMLEvent = () => {
+    fetch("./data/hoteles.xml")
+        .then(response => response.text())
+        .then(texto => (new window.DOMParser()).parseFromString(texto, "text/xml"))
+        .then(datos => {
+            eventXML = datos;
+            pintaEvents(eventXML.querySelectorAll('hotel'))
+        })
+        .catch(Error => {
+            alert("Archivo no encontrado");
+            console.log(Error);
+        });
 };
 
 
-//para las figuras la función getFigures y pintarListaFigura te las pinta en el html gracias a getfigures
-function getEvents() {
-    fetch('./data/events.json')
-        .then(response => response.json())
-        .then((collection) => {
-            console.log("name", collection.nameCollection);
-            pintarListaFiguras(collection.figures);
-             });
+const pintaEvents = (listaEvents) => {
+    containerDiv.innerHTML = "";
+    listaEvents.forEach(event => {
+        let nombre = event.querySelector("nombre").textContent;
+        let descripcion = event.querySelector("descripcion").textContent;
+        let estrellas = event.querySelector("estrellas").textContent;
+        let comentarios = event.querySelector("comentarios").textContent;
+        let destacado = event.getAttribute("destacado");
+        let puntuacion = event.querySelector("puntuacion").textContent;
+        let img = event.querySelector("fotoPortada").textContent;
+        let municipio = event.querySelector("municipio").textContent;
+        let servicios = event.querySelector("servicios").textContent;
+
+        containerDiv.innerHTML += pintaEventCard({
+            nombre,
+            descripcion,
+            estrellas,
+            comentarios,
+            destacado,
+            img,
+            municipio,
+            servicios,
+            puntuacion
+        });
+    })
 }
 
-// Arrow function
-const pintarListaFiguras = (listaFiguras) => {
-    const container = document.getElementById("list-events");
-            for (let event of listaFiguras){
-                container.innerHTML += `
-                <div class="card" style="width: 18rem;">
-                <img src="./img/${event.img}" class="card-img-top" alt="imagen">
-                <div class="card-body">
-                    <h5 class="card-title">${event.name}</h5>
-                    <p class="card-text">${event.description}</p>
-                    <a href="#" class="btn btn-primary">Click and buy</a>
-                </div>
-            </div>
-            `
+
+const pintaEventCard = (event) => {
+    return `
+                    <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="./img/${event.img}" alt="Card image cap" style="width:286px height:120px;height: 210px;">
+                        <div class="card-body">
+                            <h5 class="card-title">${event.nombre}</h5>
+                            <p class="card-text">${event.descripcion}</p>
+                            <a href="#" class="btn btn-primary">Click and buy</a>
+                         </div>
+                    </div>
+    `
+}
+
+
+const filtrarEvents = () => {
+    let eventSeleccionado = eventSelect.options[eventSelect.selectedIndex].value;
+    if(eventXML!=""){
+        const listaEvents = eventXML.querySelectorAll('hotel');
+        let listaFiltrada=[];
+        listaEvents.forEach(event => {
+            if (event.querySelector("estrellas").textContent == eventSeleccionado || eventSeleccionado==""){
+                listaFiltrada.push(event);
             }
-
+        });
+        pintaEvents(listaFiltrada);
+    };
 };
-
-
-init();

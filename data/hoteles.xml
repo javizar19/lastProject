@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hoteles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="hoteles.xsd">
+  <!-- Info hotel 1 -->
+  <hotel id="1"
+         destacado="true">
+    <nombre>Elba Sunset Mallorca Thalasso Spa</nombre>
+    <descripcion>El establecimiento Elba Sunset Mallorca Thalasso Spa está en Palmanova, a 1,9 km de la playa de Cala Vinyes, y cuenta con restaurante, aparcamiento privado, bar y terraza. </descripcion>
+    <estrellas>4</estrellas>
+    <puntuacion>8.8</puntuacion>
+    <comentarios>721</comentarios>
+    <municipio>Palmanova</municipio>
+    <fotoPortada>camilo.jpg</fotoPortada>
+    <servicios>
+      <servicio>Gimnacio</servicio>
+      <servicio>Spa y centro de bienestar</servicio>
+      <servicio>Parking</servicio>
+      <servicio>WiFi gratis</servicio>
+      <servicio>Bar</servicio>
+    </servicios>
+    <temporadas>
+      <temporada>
+        <nombre>Alta</nombre>
+        <periodo>
+          <fechaInicio>2021-06-01</fechaInicio>
+          <fechaFin>2021-08-31</fechaFin>
+        </periodo>
+        <precioNoche>
+          <habitacion precio="100">Individual</habitacion>
+          <habitacion precio="200">Doble</habitacion>
+        </precioNoche>
+      </temporada>
+      <temporada>
+        <nombre>Baja</nombre>
+        <periodo>
+          <fechaInicio>2021-06-01</fechaInicio>
+          <fechaFin>2021-08-31</fechaFin>
+        </periodo>
+        <precioNoche>
+          <habitacion precio="50">Individual</habitacion>
+          <habitacion precio="70">Doble</habitacion>
+        </precioNoche>
+      </temporada>
+    </temporadas>
+  </hotel>
+  <!-- Info hotel 2 -->
+  <hotel id="2"
+         destacado="false">
+    <nombre>Nixe Palace</nombre>
+    <descripcion>El lujoso Nixe Palace se encuentra junto a la playa de Cala Major y al palacio de Marivent. Ofrece piscina al aire libre, spa gratuito y habitaciones con aire acondicionado y conexión WiFi gratuita. </descripcion>
+    <estrellas>5</estrellas>
+    <puntuacion>8.6</puntuacion>
+    <comentarios>791</comentarios>
+    <municipio>Palmanova</municipio>
+    <fotoPortada>estopa.jpg</fotoPortada>
+    <servicios>
+      <servicio>Gimnacio</servicio>
+      <servicio>Spa y centro de bienestar</servicio>
+      <servicio>Parking</servicio>
+      <servicio>Bar</servicio>
+    </servicios>
+    <temporadas>
+      <temporada>
+        <nombre>Alta</nombre>
+        <periodo>
+          <fechaInicio>2021-06-01</fechaInicio>
+          <fechaFin>2021-08-31</fechaFin>
+        </periodo>
+        <precioNoche>
+          <habitacion precio="200">Individual</habitacion>
+          <habitacion precio="300">Doble</habitacion>
+        </precioNoche>
+      </temporada>
+      <temporada>
+        <nombre>Baja</nombre>
+        <periodo>
+          <fechaInicio>2021-06-01</fechaInicio>
+          <fechaFin>2021-08-31</fechaFin>
+        </periodo>
+        <precioNoche>
+          <habitacion precio="150">Individual</habitacion>
+          <habitacion precio="170">Doble</habitacion>
+        </precioNoche>
+      </temporada>
+    </temporadas>
+  </hotel>
+  <!-- Info hotel 3 -->
+  <hotel id="3"
+         destacado="false">
+    <nombre>Hotel Esplendido</nombre>
+    <descripcion>El Hotel Esplendido está en primera línea de playa en Port de Sóller. Ofrece alojamiento moderno con aire acondicionado, jardín y piscina al aire libre.</descripcion>
+    <estrellas>4</estrellas>
+    <puntuacion>9.4</puntuacion>
+    <comentarios>403</comentarios>
+    <municipio>Palmanova</municipio>
+    <fotoPortada>esplendido.jpg</fotoPortada>
+    <servicios>
+      <servicio>Gimnacio</servicio>
+      <servicio>Parking</servicio>
+      <servicio>WiFi gratis</servicio>
+      <servicio>Bar</servicio>
+    </servicios>
+    <temporadas>
+      <temporada>
+        <nombre>Alta</nombre>
+        <periodo>
+          <fechaInicio>2021-06-01</fechaInicio>
+          <fechaFin>2021-08-31</fechaFin>
+        </periodo>
+        <precioNoche>
+          <habitacion precio="100">Individual</habitacion>
+          <habitacion precio="150">Doble</habitacion>
+        </precioNoche>
+      </temporada>
+      <temporada>
+        <nombre>Baja</nombre>
+        <periodo>
+          <fechaInicio>2021-06-01</fechaInicio>
+          <fechaFin>2021-08-31</fechaFin>
+        </periodo>
+        <precioNoche>
+          <habitacion precio="55">Individual</habitacion>
+          <habitacion precio="75">Doble</habitacion>
+        </precioNoche>
+      </temporada>
+    </temporadas>
+  </hotel>
+  <!-- Info hotel 4 -->
+  <hotel id="4"
+         destacado="false">
+    <nombre>Hotel de Mar Gran Meliá - Adults Only - The Leading Hotels of the World</nombre>
+    <descripcion>El Hotel de Mar Gran Meliá - Adults Only ofrece una pequeña playa exclusiva y está situado en Illetas, frente al mar y rodeado de jardines.</descripcion>
+    <estrellas>5</estrellas>
+    <puntuacion>8.4</puntuacion>
+    <comentarios>244</comentarios>
+    <municipio>Illetas</municipio>
+    <fotoPortada>mar-gm.jpg</fotoPortada>
+    <servicios>
+      <servicio>Gimnacio</servicio>
+      <servicio>Piscina exterior</servicio>
+      <servicio>Parking</servicio>
+      <servicio>WiFi gratis</servicio>
+      <servicio>Bar</servicio>
+      <servicio>Solo adultos</servicio>
+    </servicios>
+    <temporadas>
+      <temporada>
+        <nombre>Alta</nombre>
+        <periodo>
+          <fechaInicio>2021-06-01</fechaInicio>
+          <fechaFin>2021-08-31</fechaFin>
+        </periodo>
+        <precioNoche>
+          <habitacion precio="90">Individual</habitacion>
+          <habitacion precio="120">Doble</habitacion>
+        </precioNoche>
+      </temporada>
+      <temporada>
+        <nombre>Baja</nombre>
+        <periodo>
+          <fechaInicio>2021-06-01</fechaInicio>
+          <fechaFin>2021-08-31</fechaFin>
+        </periodo>
+        <precioNoche>
+          <habitacion precio="70">Individual</habitacion>
+          <habitacion precio="90">Doble</habitacion>
+        </precioNoche>
+      </temporada>
+    </temporadas>
+  </hotel>
+  <!-- Info hotel 5 -->
+  <hotel id="5"
+         destacado="false">
+    <nombre>Ynaira hotel Spa</nombre>
+    <descripcion>El Ynaira hotel Spa ofrece alojamiento en Ariany, a 35 km de Cala Millor, y cuenta con piscina al aire libre y sala de fitness. Hay WiFi gratuita en todas las instalaciones.</descripcion>
+    <estrellas>4</estrellas>
+    <puntuacion>9.5</puntuacion>
+    <comentarios>275</comentarios>
+    <municipio>Ariany</municipio>
+    <fotoPortada>ynaria.jpg</fotoPortada>
+    <servicios>
+      <servicio>Gimnacio</servicio>
+      <servicio>Spa y centro de bienestar</servicio>
+      <servicio>Parking</servicio>
+      <servicio>WiFi gratis</servicio>
+      <servicio>Bar</servicio>
+    </servicios>
+    <temporadas>
+      <temporada>
+        <nombre>Alta</nombre>
+        <periodo>
+          <fechaInicio>2021-06-01</fechaInicio>
+          <fechaFin>2021-08-31</fechaFin>
+        </periodo>
+        <precioNoche>
+          <habitacion precio="100">Individual</habitacion>
+          <habitacion precio="120">Doble</habitacion>
+        </precioNoche>
+      </temporada>
+      <temporada>
+        <nombre>Baja</nombre>
+        <periodo>
+          <fechaInicio>2021-06-01</fechaInicio>
+          <fechaFin>2021-08-31</fechaFin>
+        </periodo>
+        <precioNoche>
+          <habitacion precio="60">Individual</habitacion>
+          <habitacion precio="85">Doble</habitacion>
+        </precioNoche>
+      </temporada>
+    </temporadas>
+  </hotel>
+</hoteles>

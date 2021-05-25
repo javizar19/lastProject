@@ -17,6 +17,10 @@
 
 <body>
     <div class="contenedor">
+
+
+
+
         <header class="header">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
@@ -48,39 +52,50 @@
                 </div>
             </nav>
         </header>
+
+
+
+
+
         <main class="contenido"><!-- FILTRO BÚSQUEDA
             Hacer filtro de búsqueda con JS -->
-            <div class="input-group rounded" style="margin-bottom: 30px;"> 
+            <div class="input-group rounded" style="margin-bottom: 20px;"> 
                 <input type="search" id="input-seach" class="form-control rounded" placeholder="Busca un evento" aria-label="Search"
                     aria-describedby="search-addon" />
                 <span class="input-group-text border-0" id="search-addon">
                     <input type="button" value="Buscar" style="background-color: transparent; border: none;">
                 </span>
             </div>
-            <div><!-- FILTRO
+
+            <div><!-- FILTRO LISTADO
                 Hacer el filtro del estilo con JS -->
                 <p>
                     <label>Filtra por estilo:</label>
                     <select name="stars" id="filtrar-estrellas">
                         <option value="" selected>Todos</option>
-                        <option value="1">Pop</option>
-                        <option value="2">Jazz</option>
-                        <option value="3">Country</option>
-                        <option value="4">Rock</option>
-                        <option value="5">Rap</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
                     </select>
+                    <button type="submit" id="search-btn" style="width: 10%;">Buscar</button>
                 </p>
             </div>
             <div id="list-events" class="container"></div> <!-- MAIN -->
             <div class="social">
                 <a href="https://es-es.facebook.com/"><img src="./img/ofertas.jpeg" alt="oferta" style="height: 80px; width: 80px;"></a>
                 <!-- Poner ofertas aquí dentro con la foto del evento -->
-                <a href="https://es-es.facebook.com/"><img src="./img/logo/seven-network-tv.svg" alt="Facebook" style="height: 80px; width: 80px;"></a>
-                <a href="https://www.instagram.com/?hl=es"><img src="./img/logo/seven-network-tv.svg" alt="Instragram" style="height: 80px; width: 80px;"></a>
-                <a href="https://twitter.com/"><img src="./img/logo/seven-network-tv.svg" alt="Twitter" style="height: 80px; width: 80px;"></a>
-                <a href="https://www.reddit.com/"><img src="./img/logo/seven-network-tv.svg" alt="Reddit" style="height: 80px; width: 80px;"></a>
+                <a href="https://es-es.facebook.com/"><img src="./img/morat.jpg" alt="Facebook" style="height: 80px; width: 80px; margin: 20px;"></a>
+                <a href="https://www.instagram.com/?hl=es"><img src="./img/estopa.jpg" alt="Instragram" style="height: 80px; width: 80px;  margin: 20px;"></a>
+                <a href="https://twitter.com/"><img src="./img/camilo.jpg" alt="Twitter" style="height: 80px; width: 80px;  margin: 20px;"></a>
+                <a href="https://www.reddit.com/"><img src="./img/hens.jpg" alt="Reddit" style="height: 80px; width: 80px;  margin: 20px;"></a>
             </div>
         </main>
+
+
+
+
         <footer class="footer"><!-- FOOTER
             Hacerlo dinámico -->
             <div class="container py-4">
@@ -88,12 +103,12 @@
                 <div class="col-lg-2 col-md-6 mb-4 mb-lg-0"><img src="img/logo.png" alt="" width="180" class="mb-3">
                     <p class="font-italic text-muted">Nuestras redes sociales</p>
                   <ul class="list-inline mt-4">
-                    <li class="list-inline-item"><a href="#" target="_blank" title="twitter"><img src="./img/logo/seven-network-tv.svg" height="40px" width="40px" alt=""></i></i></a></li>
-                    <li class="list-inline-item"><a href="#" target="_blank" title="facebook"><img src="./img/logo/seven-network-tv.svg" height="40px" width="40px" alt=""></i></i></a></li>
-                    <li class="list-inline-item"><a href="#" target="_blank" title="instagram"><img src="./img/logo/seven-network-tv.svg" height="40px" width="40px" alt=""></i></i></a></li>
-                    <li class="list-inline-item"><a href="#" target="_blank" title="instagram"><img src="./img/logo/seven-network-tv.svg" height="40px" width="40px" alt=""></i></i></a></li>
-                    <li class="list-inline-item"><a href="#" target="_blank" title="vimeo"><img src="./img/logo/seven-network-tv.svg" height="40px" width="40px" alt=""></i></i></a></li>
-                    <li class="list-inline-item"><a href="#" target="_blank" title="youtube"><img src="./img/logo/seven-network-tv.svg" height="40px" width="40px" alt=""></i></i></a></li>
+                    <li class="list-inline-item"><a href="#" target="_blank" title="twitter"><img src="./img/twitter.jpg" height="40px" width="40px" alt=""></i></i></a></li>
+                    <li class="list-inline-item"><a href="#" target="_blank" title="facebook"><img src="./img/facebook.png" height="40px" width="40px" alt=""></i></i></a></li>
+                    <li class="list-inline-item"><a href="#" target="_blank" title="instagram"><img src="./img/instagram.png" height="40px" width="40px" alt=""></i></i></a></li>
+                    <li class="list-inline-item"><a href="#" target="_blank" title="twitch"><img src="./img/twitch.jpg" height="40px" width="40px" alt=""></i></i></a></li>
+                    <li class="list-inline-item"><a href="#" target="_blank" title="vimeo"><img src="./img/vimeo.png" height="40px" width="40px" alt=""></i></i></a></li>
+                    <li class="list-inline-item"><a href="#" target="_blank" title="youtube"><img src="./img/youtube.jpg" height="40px" width="40px" alt=""></i></i></a></li>
                   </ul>
                 </div>
                 <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
